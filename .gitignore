@@ -1,0 +1,51 @@
+# ------------------------------------------------------------------ Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.so
+
+# ------------------------------------------------------------------ Virtual environment
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# ------------------------------------------------------------------ Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ------------------------------------------------------------------ Jarvis: data lokal
+# Indeks dokumentasi (SQLite). Dibuat ulang otomatis oleh docs_index.sync().
+.jarvis_docs.db
+.jarvis_docs.db-journal
+.jarvis_docs.db-wal
+.jarvis_docs.db-shm
+
+# Memori pribadi (dibuat otomatis oleh jarvis.py, isinya fakta pribadi)
+memory.json
+
+# Catatan dokumentasi pribadi (folder default, bisa diubah lewat JARVIS_DOCS)
+docs/
+
+# ------------------------------------------------------------------ Model lokal (ukurannya besar, unduh sendiri)
+*.llamafile
+*.gguf
+
+# ------------------------------------------------------------------ Rahasia / konfigurasi lokal
+.env
+.env.*
+
+# ------------------------------------------------------------------ Log & cache
+*.log
+.cache/
+
+# ------------------------------------------------------------------ Editor & OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
